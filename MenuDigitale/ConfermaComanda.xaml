@@ -1,0 +1,27 @@
+﻿<Window x:Class="MenuDigitale.ConfermaComanda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MenuDigitale"
+        mc:Ignorable="d"
+           Title="ConfermaComanda" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="250"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Comanda" HorizontalContentAlignment="Center" FontWeight="Bold" Foreground="Red" FontSize="18"  ></Label>
+
+        <StackPanel Grid.Row="1">
+            <ListBox x:Name="ltb_comanda" Width="400" Height="250"></ListBox>
+        </StackPanel>
+        <Button x:Name="btn_inviacomanda" Content="Invia la comanda" Grid.Row="2" Width="120" Height="20" VerticalAlignment="Bottom" Click="btn_inviacomanda_Click" ></Button>
+        <Button x:Name="btn_esci" Content="Esci" Grid.Row="3" Width="120" Height="20" VerticalAlignment="Center" Click="btn_esci_Click" ></Button>
+        <Button x:Name="btn_cancellaComanda" Content="Cancella la comanda" Grid.Row="4" Width="120" Height="20" VerticalAlignment="Center" Click="btn_cancellaComanda_Click"/>
+    </Grid>
+</Window>
