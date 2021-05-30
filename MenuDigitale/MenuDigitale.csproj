@@ -6,4 +6,55 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Background.jpg" />
+    <None Remove="immaginiMenu\Carbonara.jpg" />
+    <None Remove="immaginiMenu\FilettoAlPepeRosa.jpg" />
+    <None Remove="immaginiMenu\Fiorentina.jpg" />
+    <None Remove="immaginiMenu\GnocchiAlPomodoro.jpg" />
+    <None Remove="immaginiMenu\Grigliata.jpg" />
+    <None Remove="immaginiMenu\PenneAllArrabbiata.jpg" />
+    <None Remove="immaginiMenu\Tagliata.jpg" />
+    <None Remove="immaginiMenu\TagliatelleAlRagu.png" />
+    <None Remove="immaginiMenu\Tartar.jpg" />
+    <None Remove="immaginiMenu\Tortellini.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="immaginiMenu\Background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\Carbonara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\FilettoAlPepeRosa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\Fiorentina.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\GnocchiAlPomodoro.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\Grigliata.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\PenneAllArrabbiata.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\Tagliata.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\TagliatelleAlRagu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="immaginiMenu\Tartar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CustomToolNamespace></CustomToolNamespace>
+    </Resource>
+    <Resource Include="immaginiMenu\Tortellini.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

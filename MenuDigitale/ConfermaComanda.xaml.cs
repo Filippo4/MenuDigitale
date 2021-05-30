@@ -21,14 +21,22 @@ namespace MenuDigitale
         public ConfermaComanda(List<string> comanda)
         {
             InitializeComponent();
+            this.comanda = comanda;
             for (int i = 0; i < comanda.Count; i++)
                 ltb_comanda.Items.Add(comanda[i].ToString());
         }
 
         private void btn_inviacomanda_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("la comanda è stata inviata!", "Informazione", MessageBoxButton.OK, MessageBoxImage.Information);
-            this.Close();
+            if (comanda.Count != 0)
+            {
+                MessageBox.Show("la comanda è stata inviata!", "Informazione", MessageBoxButton.OK, MessageBoxImage.Information);
+                ltb_comanda.Items.Clear();
+                comanda.Clear();
+                this.Close();
+            }else
+                MessageBox.Show("la comanda non può essere inviata vuota!", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
+
         }
 
         private void btn_esci_Click(object sender, RoutedEventArgs e)
@@ -38,8 +46,8 @@ namespace MenuDigitale
 
         private void btn_cancellaComanda_Click(object sender, RoutedEventArgs e)
         {
+            
             ltb_comanda.Items.Clear();
-
             comanda.Clear();
             this.Close();
         }

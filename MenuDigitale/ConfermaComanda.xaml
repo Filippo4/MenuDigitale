@@ -7,6 +7,11 @@
         mc:Ignorable="d"
            Title="ConfermaComanda" Height="450" Width="400">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="immaginiMenu/Background.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>
             <RowDefinition Height="250"></RowDefinition>
@@ -15,13 +20,18 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Comanda" HorizontalContentAlignment="Center" FontWeight="Bold" Foreground="Red" FontSize="18"  ></Label>
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Comanda" HorizontalContentAlignment="Center" FontWeight="Bold" Foreground="#FFA66320" FontSize="24" FontFamily="Bodoni MT"></Label>
 
-        <StackPanel Grid.Row="1">
-            <ListBox x:Name="ltb_comanda" Width="400" Height="250"></ListBox>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+            <ListBox x:Name="ltb_comanda" Width="400" Height="250" FontFamily="Bodoni MT" FontSize="16">
+                <ListBox.Background>
+                    <ImageBrush/>
+                </ListBox.Background>
+
+            </ListBox>
         </StackPanel>
-        <Button x:Name="btn_inviacomanda" Content="Invia la comanda" Grid.Row="2" Width="120" Height="20" VerticalAlignment="Bottom" Click="btn_inviacomanda_Click" ></Button>
-        <Button x:Name="btn_esci" Content="Esci" Grid.Row="3" Width="120" Height="20" VerticalAlignment="Center" Click="btn_esci_Click" ></Button>
-        <Button x:Name="btn_cancellaComanda" Content="Cancella la comanda" Grid.Row="4" Width="120" Height="20" VerticalAlignment="Center" Click="btn_cancellaComanda_Click"/>
+        <Button x:Name="btn_inviacomanda" Content="Invia la comanda" Grid.Row="2" Width="150" Height="25" VerticalAlignment="Bottom" Click="btn_inviacomanda_Click" FontFamily="Bodoni MT" FontSize="14" Background="#FFEEAF71" ></Button>
+        <Button x:Name="btn_esci" Content="Esci" Grid.Row="3" Width="150" Height="25" VerticalAlignment="Center" Click="btn_esci_Click" FontFamily="Bodoni MT" FontSize="14" Background="#FFEEAF71" ></Button>
+        <Button x:Name="btn_cancellaComanda" Content="Cancella la comanda" Grid.Row="4" Width="150" Height="25" VerticalAlignment="Center" Click="btn_cancellaComanda_Click" FontFamily="Bodoni MT" FontSize="14" Background="#FFEEAF71" />
     </Grid>
 </Window>

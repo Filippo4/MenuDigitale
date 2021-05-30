@@ -5,90 +5,99 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuDigitale"
         mc:Ignorable="d"
-         Title="Menu" Height="675" Width="1100">
-    <StackPanel>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50"></RowDefinition>
-                <RowDefinition Height="160"></RowDefinition>
-                <RowDefinition Height="65"></RowDefinition>
-                <RowDefinition Height="50"></RowDefinition>
-                <RowDefinition Height="160"></RowDefinition>
-                <RowDefinition Height="65"></RowDefinition>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="40"></RowDefinition>
-            </Grid.RowDefinitions>
-            <Label Content="Primi" FontSize="30" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"/>
-            <Button x:Name="add_primi_1" Content="Add" Grid.Column="0" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_1_Click"/>
-            <Button x:Name="add_primi_2" Content="Add" Grid.Column="1" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_2_Click"/>
-            <Button x:Name="add_primi_3" Content="Add" Grid.Column="2" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_3_Click"/>
-            <Button x:Name="add_primi_4" Content="Add" Grid.Column="3" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_4_Click"/>
-            <Button x:Name="add_primi_5" Content="Add" Grid.Column="4" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_5_Click"/>
+         Title="Menu" Height="720" Width="1100">
+    
+    <Grid>
+        <Grid.Background>
+          <ImageBrush ImageSource="immaginiMenu/Background.jpg"/>
+        </Grid.Background>
 
-            <StackPanel Grid.Row="1" Grid.Column="0">
-                <Label Content="Tagliatelle al ragù 13€" HorizontalAlignment="Center" FontSize="18" ></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\TagliatelleAlRagu.png"  Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="160"></RowDefinition>
+            <RowDefinition Height="65"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="160"></RowDefinition>
+            <RowDefinition Height="65"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
 
-            <StackPanel  Grid.Row="1" Grid.Column="1">
-                <Label Content="Penne all'arrabiata 12€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\PenneAllArrabbiata.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <Label Content="Primi" FontSize="30" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_primi_1" Content="Aggiungi" Grid.Column="0" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_1_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_primi_2" Content="Aggiungi" Grid.Column="1" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_2_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_primi_3" Content="Aggiungi" Grid.Column="2" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_3_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_primi_4" Content="Aggiungi" Grid.Column="3" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_4_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_primi_5" Content="Aggiungi" Grid.Column="4" Grid.Row="2" FontSize="18" Height="40" Width="150" Click="add_primi_5_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
 
-            <StackPanel Grid.Row="1" Grid.Column="2">
-                <Label Content="Gnocchi al pomodoro 10€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\GnocchiAlPomodoro.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" >
+            <Label Content="Tagliatelle al ragù 13€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\TagliatelleAlRagu.png"  Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
 
-            <StackPanel Grid.Row="1" Grid.Column="3">
-                <Label Content="Tortellini alla norcina 11€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\Tortellini.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <StackPanel  Grid.Row="1" Grid.Column="1">
+            <Label Content="Penne all'arrabiata 12€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\PenneAllArrabbiata.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
 
-            <StackPanel Grid.Row="1" Grid.Column="4">
-                <Label Content="Tortellini alla norcina 12€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\Carbonara.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <Label Content="Gnocchi al pomodoro 10€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\GnocchiAlPomodoro.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
 
-            <Label Content="Secondi" FontSize="30" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Grid.Column="3">
+            <Label Content="Tortellini alla norcina 11€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\Tortellini.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
 
-            <StackPanel Grid.Row="4" Grid.Column="0">
-                <Label Content="Tagliata 23€ al kg" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\Tagliata.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="4">
+            <Label Content="Tortellini alla norcina 12€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\Carbonara.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
 
-            <StackPanel Grid.Row="4" Grid.Column="1">
-                <Label Content="Filetto al pepe rosa 20€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\FilettoAlPepeRosa.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <Rectangle Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" Fill="Black" Height="5"></Rectangle>
 
-            <StackPanel Grid.Row="4" Grid.Column="2">
-                <Label Content="Bistecca fiorentina 65€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\Fiorentina.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <Label Content="Secondi" FontSize="30" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" FontFamily="Bodoni MT"/>
 
-            <StackPanel Grid.Row="4" Grid.Column="3">
-                <Label Content="Grigliata mista 17€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\Grigliata.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="0">
+            <Label Content="Tagliata 23€ al kg" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\Tagliata.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
 
-            <StackPanel Grid.Row="4" Grid.Column="4">
-                <Label Content="Tartare di vitello 20€" HorizontalAlignment="Center" FontSize="18"></Label>
-                <Image Source="C:\Users\Dell\source\repos\SmuseumWpf\AppRistoranteWpf\immaginiMenu\Tartar.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
-            </StackPanel>
-            <Button x:Name="add_secondi_1" Content="Add" Grid.Column="0" Grid.Row="5" FontSize="18" Height="40" Width="150" Click="add_secondi_1_Click"/>
-            <Button x:Name="add_secondi_2" Content="Add" Grid.Column="1" Grid.Row="5" FontSize="18" Height="40" Width="150" Click="add_secondi_2_Click"/>
-            <Button x:Name="add_secondi_3" Content="Add" Grid.Column="2" Grid.Row="5" FontSize="18" Height="40" Width="150" Click="add_secondi_3_Click"/>
-            <Button x:Name="add_secondi_4" Content="Add" Grid.Column="3" Grid.Row="5" FontSize="18" Height="40" Width="150" Click="add_secondi_4_Click"/>
-            <Button x:Name="add_secondi_5" Content="Add" Grid.Column="4" Grid.Row="5" FontSize="18" Height="40" Width="150" Click="add_secondi_5_Click"/>
-            <Button x:Name="Comanda" Content="Conferma la comanda" Grid.Column="3" Grid.Row="7" FontSize="18" Grid.ColumnSpan="2" Width="200" Click="Comanda_Click"/>
-        </Grid>
-    </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="1">
+            <Label Content="Filetto al pepe rosa 20€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\FilettoAlPepeRosa.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="2">
+            <Label Content="Bistecca fiorentina 65€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\Fiorentina.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="3">
+            <Label Content="Grigliata mista 17€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\Grigliata.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="4">
+            <Label Content="Tartare di vitello 20€" HorizontalAlignment="Center" FontSize="18" FontFamily="Bodoni MT"></Label>
+            <Image Source="immaginiMenu\Tartar.jpg" Width="150" Height="120" VerticalAlignment="Bottom"/>
+        </StackPanel>
+        <Button x:Name="add_secondi_1" Content="Aggiungi" Grid.Column="0" Grid.Row="6" FontSize="18" Height="40" Width="150" Click="add_secondi_1_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_secondi_2" Content="Aggiungi" Grid.Column="1" Grid.Row="6" FontSize="18" Height="40" Width="150" Click="add_secondi_2_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_secondi_3" Content="Aggiungi" Grid.Column="2" Grid.Row="6" FontSize="18" Height="40" Width="150" Click="add_secondi_3_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_secondi_4" Content="Aggiungi" Grid.Column="3" Grid.Row="6" FontSize="18" Height="40" Width="150" Click="add_secondi_4_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+        <Button x:Name="add_secondi_5" Content="Aggiungi" Grid.Column="4" Grid.Row="6" FontSize="18" Height="40" Width="150" Click="add_secondi_5_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+
+        <Label x:Name="lbl_conferma" Content=" " Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="8" FontSize="20" FontFamily="Bodoni MT"></Label>
+        <Button x:Name="Comanda" Content="Conferma la comanda" Grid.Column="3" Grid.Row="8" FontSize="20" Grid.ColumnSpan="2" Width="200" Click="Comanda_Click" Background="#FFEEAF71" FontFamily="Bodoni MT"/>
+    </Grid>
 </Window>
